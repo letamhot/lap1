@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Số nguyên tố</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	
+	function songuyento(number) {
+		if (number < 2) {
+			return false;
+	 	}
+	 	if (number ==2) {
+	 		return true;
+	 	}
+	 	for (let i = 2; i < number; i++) {
+	 		if (number%i == 0) {
+	 			return false;
+	 		}
+	 	}
+
+	 	return true;
+	}
+document.write("<hr>")
+	let count=0;
+	let i =0;
+	let number = + prompt("nhap só lượng snt bạn cần hiển thị:")
+	while(count<number){
+		if(songuyento(i)===true){
+			document.write(i+" là số nguyên tố" +"<br>");
+			count++;
+		}
+		i++;
+	}
+	
+	
+
+	
+	
+</script>
+</body>
+</html>

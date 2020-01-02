@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tổng 30 số chia hết cho 7</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	
+	function Number(number) {
+		if(number<0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	Number();
+	
+
+	let count = 0;
+	let i = 0;
+	
+	while(count<30){
+			if(i%7==0 && i !=0){
+				if(Number(i)===true){
+				document.write("<br>"+"Số chia hết cho 7 là: "+ i);
+				count++;
+				}
+
+			}i++;
+		}
+document.write("<hr>");
+let sum =0;
+let j =0;
+let dem = 0;
+while(dem<30){
+	if(j%7==0 && j !=0){
+		if(Number(j)===true){
+			sum+= j;
+			dem++;
+		}
+
+	}j++;
+
+}document.write("Tổng 30 số là: "+ sum);
+</script>
+</body>
+</html>
